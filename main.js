@@ -23,7 +23,7 @@ const fetchData = async () => {
 
   let gotoWhatsapp = () => {
     let whatsappUrl =
-      "https://wa.me/9131189261?text=" +
+      "https://wa.me/7415061124?text=" +
       "Quotation : " +
       h5.innerText +
       "%0a" +
@@ -44,7 +44,7 @@ const fetchData = async () => {
 
   // let gotoSkype = () => {
   //   let skypeUrl =
-  //     "https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" +
+  //     "/" +
   //     "Quotation : " +
   //     h5.innerText +
   //     "%0a" +
@@ -64,7 +64,6 @@ const fetchData = async () => {
   let speech = new SpeechSynthesisUtterance();
 
   let playBtn = document.querySelector("#play");
-
   const playAudio = () => {
     speech.text = h5.innerText;
     window.speechSynthesis.speak(speech);
@@ -72,7 +71,6 @@ const fetchData = async () => {
     speech.text = p.innerText;
     window.speechSynthesis.speak(speech);
   };
-
   playBtn.addEventListener("click", playAudio);
 
 };
@@ -95,7 +93,7 @@ let skype = document.querySelector("#fb");
 
 // const whatBtn = (e) =>{
 //     e.preventDefault();
-//     window.open("https://wa.me/+919131189261");
+//     window.open("https://wa.me/");
 // }
 
 // const instaBtn = (e) => {
