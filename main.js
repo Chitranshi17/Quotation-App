@@ -40,24 +40,24 @@ const fetchData = async () => {
 
   //   Skype Share Functionality
 
-  let Skype = document.querySelector("#skype");
+  // let Skype = document.querySelector("#skype");
 
-  let gotoSkype = () => {
-    let skypeUrl =
-      "https://skype.com/invite/eb25c15ae366cbf2" +
-      "Quotation : " +
-      h5.innerText +
-      "%0a" +
-      "Author Name: " +
-      p.innerText +
-      "%0a" +
-      "Type: " +
-      a.innerText;
+  // let gotoSkype = () => {
+  //   let skypeUrl =
+  //     "https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" +
+  //     "Quotation : " +
+  //     h5.innerText +
+  //     "%0a" +
+  //     "Author Name: " +
+  //     p.innerText +
+  //     "%0a" +
+  //     "Type: " +
+  //     a.innerText;
 
-    window.open(skypeUrl, "_blank").focus();
-  };
+  //   window.open(skypeUrl, "_blank").focus();
+  // };
 
-  Skype.addEventListener("click", gotoSkype);
+  // Skype.addEventListener("click", gotoSkype);
 
   // Voice Function
 
@@ -75,25 +75,6 @@ const fetchData = async () => {
 
   playBtn.addEventListener("click", playAudio);
 
-  // // Whatsapp Share
-
-  // const whatBtn = () =>{
-  //         // e.preventDefault();
-
-  //     }
-
-  // what.addEventListener('click',whatBtn);
-
-  // let What = document.querySelector('#what')
-  // const gotoWhatsapp = () =>{
-  //     let card = document.querySelector('#card');
-
-  //     let url = "https://wa.me//9179855573?text=" + "h5:" + h5;
-
-  //     window.open(url, "_blank").focus();
-  // }
-
-  // what.addEventListener('click', gotoWhatsapp);
 };
 
 fetchData();
